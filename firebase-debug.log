@@ -1,0 +1,73 @@
+[debug] [2023-05-24T13:35:12.058Z] ----------------------------------------------------------------------
+[debug] [2023-05-24T13:35:12.061Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-24T13:35:12.062Z] CLI Version:   12.2.0
+[debug] [2023-05-24T13:35:12.063Z] Platform:      win32
+[debug] [2023-05-24T13:35:12.063Z] Node Version:  v18.12.1
+[debug] [2023-05-24T13:35:12.064Z] Time:          Wed May 24 2023 20:35:12 GMT+0700 (Indochina Time)
+[debug] [2023-05-24T13:35:12.065Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-24T13:35:12.265Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-24T13:35:12.266Z] > authorizing via signed-in user (fadlyfebro123@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Febro\Website\social-link-react-js-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-24T13:36:43.759Z] Using project from CLI flag: try-catch-tutorial
+[debug] [2023-05-24T13:36:43.771Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial [none]
+[debug] [2023-05-24T13:36:44.594Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial 403
+[debug] [2023-05-24T13:36:44.595Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-24T13:36:44.596Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-24T13:36:44.694Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project try-catch-tutorial. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-05-24T13:37:00.948Z] ----------------------------------------------------------------------
+[debug] [2023-05-24T13:37:00.951Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-05-24T13:37:00.952Z] CLI Version:   12.2.0
+[debug] [2023-05-24T13:37:00.952Z] Platform:      win32
+[debug] [2023-05-24T13:37:00.952Z] Node Version:  v18.12.1
+[debug] [2023-05-24T13:37:00.954Z] Time:          Wed May 24 2023 20:37:00 GMT+0700 (Indochina Time)
+[debug] [2023-05-24T13:37:00.954Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-24T13:37:01.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-24T13:37:01.153Z] > authorizing via signed-in user (fadlyfebro123@gmail.com)
+[debug] [2023-05-24T13:37:01.153Z] [iam] checking project try-catch-tutorial for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-05-24T13:37:01.159Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/try-catch-tutorial:testIamPermissions [none]
+[debug] [2023-05-24T13:37:01.160Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/try-catch-tutorial:testIamPermissions x-goog-quota-user=projects/try-catch-tutorial
+[debug] [2023-05-24T13:37:01.160Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/try-catch-tutorial:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-05-24T13:37:02.499Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/try-catch-tutorial:testIamPermissions 200
+[debug] [2023-05-24T13:37:02.500Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/try-catch-tutorial:testIamPermissions {}
+[debug] [2023-05-24T13:37:02.500Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project try-catch-tutorial:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-05-24T13:37:02.502Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial [none]
+[debug] [2023-05-24T13:37:02.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial 403
+[debug] [2023-05-24T13:37:02.860Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/try-catch-tutorial {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-05-24T13:37:02.862Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-05-24T13:37:02.954Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\KEI\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project try-catch-tutorial. Please make sure the project exists and your account has permission to access it.
